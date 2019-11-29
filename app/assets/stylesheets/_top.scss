@@ -1,0 +1,59 @@
+main{
+ .title{
+      font-size: 100px;
+      font-weight: bold;
+      font-family: 'Kaushan Script', cursive;
+      text-align: center;
+      text-shadow: 5px 5px 2px black;
+      line-height: 789px;
+      color:white;
+      
+    } 
+  .header{
+    position: absolute;
+    width: 100%;
+    top:0;
+    bottom:700px;
+    background-color: rgba(255,255,255,0.3);
+    .rogo{
+      position: absolute;
+      top:0;
+      left:0;
+      height: 100%;
+    }
+    .follow-me {
+      list-style: none;
+      margin-left: 200px;
+      line-height: 89px;
+      overflow: hidden;
+      padding: 0;
+    }
+    .follow-me li {
+      float: left;
+      margin: 0 8px 8px 0;
+      padding: 0;
+    }
+    .follow-me li a::before {
+      border-style: solid;
+      border-width: 1px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      color: #fff;
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: 16px;
+      height: 42px; /* Button height */
+      line-height: 42px; /* Button height */
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease;
+      text-align: center;
+      width: 42px; /* Button width */
+    }
+    
+    .follow-me li a[href*="facebook.com"]::before       { border-color: #3b5998; background-color: #3b5998; content: "\f09a"; }
+    .follow-me li a[href*="instagram.com"]::before      { border-color: #125688; background-color: #125688; content: "\f16d"; }
+    .follow-me li a[href*="twitter.com"]::before        { border-color: #55acee; background-color: #55acee; content: "\f099"; }
+    .follow-me li a[href*="youtube.com"]::before        { border-color: #cd201f; background-color: #cd201f; content: "\f16a"; }
+  }
+}   
+
