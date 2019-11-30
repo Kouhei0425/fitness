@@ -8,13 +8,16 @@
     %img{src: "assets/rogo.png",class: "rogo"}
     %ul.follow-me
       %li
-        %a{href: "https://twitter.com/login?lang=ja", class: "icon"}
+        %a{href: "https://twitter.com/login?lang=ja"}
       %li
-        %a{href: "https://www.instagram.com/?hl=ja", class: "icon"}
+        %a{href: "https://www.instagram.com/?hl=ja"}
       %li
-        %a{href: "https://ja-jp.facebook.com/", class: "icon"}
+        %a{href: "https://ja-jp.facebook.com/"}
       %li
-        %a{href: "https://www.youtube.com/?gl=JP&hl=ja", class: "icon"}
+        %a{href: "https://www.youtube.com/?gl=JP&hl=ja"}
+      %li
+        = link_to  edit_user_path(current_user) do
+          = fa_icon 'user-circle',class: 'icon'
   .title
     Urban Style Fitness
   %ul.sample
@@ -33,16 +36,17 @@
 .sidebar
   %ul.sidebar-list
     %li.sidebar-item
-      %a.sidebar-anchor{href: "#"}
+      %a.sidebar-anchor{href: ""}
+        home
+    %li.sidebar-item
+      %a.sidebar-anchor{href: "https://www.bodybuilding.com/workout-plans/"}
         Work Out
     %li.sidebar-item
-      %a.sidebar-anchor{href: "#"}
-        Diet
-    %li.sidebar-item
-      %a.sidebar-anchor{href: "#"}
+      %a.sidebar-anchor{href: "https://jp.iherb.com/?gclid=EAIaIQobChMIiv7q4JiR5gIVTD5gCh0WLAEDEAAYASAAEgKeWPD_BwE&gclsrc=aw.ds"}
         Supplement
     %li.sidebar-item
-      %a.sidebar-anchor{href: "#"}
+      %a.sidebar-anchor{href: ""}
         Column
-        
-        
+    
+    
+  
