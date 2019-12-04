@@ -1,0 +1,23 @@
+= render :partial => "header"
+.contents
+  .postTitle
+    = @post.title
+  .postDate
+    = @post.created_at
+  .postAuthor
+  .postText
+    = simple_format @post.content
+.container
+  = form_for [@post,@comment] do |form|
+    = form.text_area :text, placeholder: "コメントする",rows: "2"
+    = form.submit "SEND"
+  .comments
+    %h4 ＜コメント一覧＞
+    - if @comments
+      - @comments.each do |comment|
+        %p
+          %strong
+            = link_to comment.user.name, "/users/#{comment.user_id}"
+            ：
+          = comment.text
+
